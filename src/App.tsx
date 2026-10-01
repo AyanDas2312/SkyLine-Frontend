@@ -20,7 +20,7 @@ export const App: React.FC = () => {
 
   const fetchNotices = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/notices');
+      const res = await axios.get('https://sky-line-backend.vercel.app/api/notices');
       setNotices(res.data);
     } catch (err) {
       console.error('Error fetching notices', err);
